@@ -69,6 +69,7 @@ services:
       - PORT=${AUTH_MS_PORT}
       - NATS_SERVERS=${NATS_SERVERS}
       - MONGO_DB_URL=${MONGO_DB_URL}
+      - JWT_SECRET=${JWT_SECRET}
 
   orders-db:
     image: postgres:16.2
